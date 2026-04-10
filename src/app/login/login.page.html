@@ -1,68 +1,49 @@
-
-  <div  class="theme-light">
-<div class="container d-flex justify-content-center align-items-center min-vh-100 px-3">
-  <div class="bg-white rounded-4 p-3 shadow-sm d-flex flex-column gap-3" style="max-width: 360px; width:100%; border-radius: 2rem;">
-
-    <!-- Título -->
-    <div class="text-center">
-      <h1 class="fw-bold mb-0" style="font-size: 24px;">Entrar</h1>
-      <p class="text-muted mb-1" style="font-size: 13px;">Acessar sua conta</p>
+<div class="theme-light">
+  <div class="top-banner">
+    <div class="banner-content">
+      <h2>Acesse sua conta</h2>
+      <p>Acompanhe todas as novidades</p>
     </div>
-
-    <!-- Inputs -->
-    <div class="d-flex flex-column gap-2">
-
-      <!-- Email -->
-      <div class="d-flex align-items-center border rounded-3 px-2 py-2 bg-white">
-        <input 
-          type="email" 
-          placeholder="Endereço de email"
-          class="form-control border-0 shadow-none p-1"
-          style="font-size: 14px;"
-        />
-        <span class="text-muted ms-2" style="font-size: 10px;">*</span>
-      </div>
-
-      <!-- Senha -->
-      <div class="d-flex align-items-center border rounded-3 px-2 py-2 bg-white">
-        <input 
-          type="password" 
-          placeholder="Senha"
-          class="form-control border-0 shadow-none p-1"
-          style="font-size: 14px;"
-        />
-        <span class="text-muted ms-2" style="font-size: 10px;">*</span>
-      </div>
-
-    </div>
-
-    <!-- Botões -->
-    <div class="d-flex flex-column gap-2 mt-1">
-
-      <button class="btn text-white fw-semibold py-2 rounded-3" style="background:#5b98eb; font-size:13px;">
-        ENTRAR
-      </button>
-
-      <button class="btn text-white fw-semibold py-2 rounded-3" style="background:#e65564; font-size:13px;">
-        CADASTRAR
-      </button>
-
-    </div>
-
-    <!-- Links -->
-    <div class="d-flex justify-content-between mt-1" style="font-size: 12px;">
-      <a href="#" class="text-decoration-none text-muted">Recuperar minha senha</a>
-      <a href="#" class="text-decoration-none text-muted">Termos e Privacidade</a>
-    </div>
-
   </div>
-</div>
-<!-- Footer Bar-->
-    <div id="footer-bar" class="footer-bar footer-bar-detached">
-		<a href="index-pages.html" class="active-nav"><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
-        <a href="index-components.html" ><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
-        <a href="index.html"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
-        <a href="index-media.html"><i class="bi bi-image font-16"></i><span>Media</span></a>
-        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+
+  <div class="login-card-container">
+    <div class="login-card">
+      <div class="text-center">
+        <h1>Entrar</h1>
+        <p>Acessar sua conta</p>
+      </div>
+
+      <div class="input-group-container">
+        <div class="input-wrapper">
+          <ion-icon name="at-outline"></ion-icon> 
+          <input type="email" placeholder="Endereço de email">
+          <span class="required-label">(necessário)</span>
+        </div>
+
+        <div class="input-wrapper">
+          <ion-icon name="key-outline"></ion-icon> 
+          <input type="password" placeholder="Senha">
+          <span class="required-label">(necessário)</span>
+        </div>
+      </div>
+
+      <div class="button-group">
+        <button class="btn-custom btn-blue">ENTRAR</button>
+        <button class="btn-custom btn-red">EFETUAR NOVO CADASTRO</button>
+      </div>
+
+      <div class="footer-links">
+        <a href="#">Recuperar minha senha</a>
+        <a href="#">Termos e Privacidade</a>
+      </div>
     </div>
+  </div>
+
+  <div class="footer-bar-detached">
+    <a href="#"><ion-icon name="globe-outline"></ion-icon> <span>Site</span></a>
+    <a href="#"><ion-icon name="logo-facebook"></ion-icon> <span>Facebook</span></a>
+    <a href="#"><ion-icon name="logo-youtube"></ion-icon> <span>Youtube</span></a>
+    <a href="#"><ion-icon name="logo-instagram"></ion-icon> <span>Instagram</span></a>
+    <a href="#"><ion-icon name="mail-outline"></ion-icon> <span>E-mail</span></a>
+  </div>
 </div>
