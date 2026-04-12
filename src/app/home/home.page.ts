@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
   standalone: false,
 })
-export class HomePage {
 
+
+export class HomePage {
+ionViewDidEnter() {
+ 
+}
 }
