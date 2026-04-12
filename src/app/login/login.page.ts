@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { register } from 'swiper/element/bundle';
+
+register();
 
 @Component({
   selector: 'app-login',
@@ -7,10 +10,6 @@ import { Component, OnInit } from '@angular/core';
   standalone: false,
 })
 export class LoginPage implements OnInit {
-
   constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() { }
 }
