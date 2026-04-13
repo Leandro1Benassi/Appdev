@@ -8,22 +8,22 @@ $card-radius: 25px;
   padding-bottom: 125px; // Espaço para o rodapé flutuante
 }
 
-.img-login {
+// Alterado de .img-login para .img-recuperar
+.img-recuperar {
   position: relative;
-  // Verifique se o caminho da imagem está correto no seu projeto
   background: url("/assets/images/exemplos/natureza.png") center/cover no-repeat;
-  height: 35%; // Aumentado um pouco para acomodar o texto embaixo
+  height: 30%; 
   max-height: 250px !important;
 
-  margin: 12px 12px 0; // topo + laterais (ESSENCIAL)
+  margin: 12px 12px 0; 
 
   border-radius: $border-radius-large;
   display: flex;
-  align-items: flex-end; // AJUSTE: Alinha o conteúdo na parte de baixo do banner
+  align-items: flex-end; 
   justify-content: center;
   text-align: center;
 
-  // SOMBRA NA FOTO (Mais suave e espalhada, igual à imagem)
+  // Sombra suave (Glow verde conforme original)
   box-shadow: 0 15px 35px rgba(2, 117, 73, 0.1);
 }
 
@@ -34,7 +34,7 @@ $card-radius: 25px;
 
   .banner-content {
     position: relative;
-    padding: 0 20px 30px; // Padding inferior para o texto não grudar na borda
+    padding: 0 20px 30px;
     z-index: 2;
 
     h2 {
@@ -42,12 +42,10 @@ $card-radius: 25px;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-
       text-align: center;
       gap: 6px;
       color: #ffffff !important;
@@ -68,10 +66,11 @@ $card-radius: 25px;
   }
 }
 
-.login-card-container {
-  margin-top: 18%; // AJUSTE: Valor negativo para o card subir sobre a foto
+// Alterado de .login-card-container para .recuperar-card-container
+.recuperar-card-container {
+  margin-top: 18%; 
   z-index: 10;
-  padding: 0 15px; // Espaçamento lateral do card no mobile
+  padding: 0 15px; 
 
   display: flex;
   flex-direction: column;
@@ -80,17 +79,15 @@ $card-radius: 25px;
   max-height: 300px !important;
 }
 
-.login-card {
+// Alterado de .login-card para .recuperar-card
+.recuperar-card {
   background: white;
   border-radius: $card-radius !important;
-
-  // SOMBRA DO CARD (Suave e cinza)
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08) !important;
 
   width: 100%;
   height: 400px;
-  // max-width: 420px;
-  padding: 18px 30px; // Mais respiro interno
+  padding: 18px 30px; 
   border: none;
 
   .text-center {
@@ -107,10 +104,12 @@ $card-radius: 25px;
   }
 }
 
+/* --- Classes utilitárias (mantidas) --- */
+
 .input-wrapper {
   display: flex;
   align-items: center;
-  border: 1px solid #f0f0f0; // Borda mais clara
+  border: 1px solid #f0f0f0; 
   border-radius: 12px;
   padding: 10px 12px;
   background: #fff !important;
@@ -118,7 +117,7 @@ $card-radius: 25px;
   margin-top: -15px;
   width: 100%;
 
-  i {
+  ion-icon { // Atualizado de 'i' para 'ion-icon' conforme seu HTML
     color: #ccc;
     margin-right: 15px;
     font-size: 18px;
@@ -130,7 +129,6 @@ $card-radius: 25px;
     background: transparent !important;
     flex: 1;
     font-size: 15px;
-
     color: #333;
     width: 100%;
 
@@ -165,20 +163,22 @@ $card-radius: 25px;
   letter-spacing: 0.5px;
   margin-bottom: 15px;
   transition: transform 0.2s;
+  cursor: pointer;
 
   &:active {
     transform: scale(0.98);
   }
 
-  // SOMBRAS COLORIDAS (Efeito Glow da imagem)
   &.btn-blue {
     background: #5b98eb;
-    // Sombra azul clara e espalhada
     box-shadow: 0 10px 25px rgba(91, 152, 235, 0.45);
+  }
+  &.btn-green {
+    background: #4caf72;
+  box-shadow: 0 10px 25px rgba(76, 175, 114, 0.45);
   }
   &.btn-red {
     background: #e65564;
-    // Sombra vermelha clara e espalhada
     box-shadow: 0 10px 25px rgba(230, 85, 100, 0.45);
     margin-bottom: 20px;
   }
@@ -186,7 +186,7 @@ $card-radius: 25px;
 
 .footer-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end ;
   font-size: 13px;
   a {
     color: #bbb;
@@ -205,23 +205,21 @@ $card-radius: 25px;
   justify-content: space-around;
   align-items: center;
   padding: 15px 0 10px 0;
-
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   z-index: 100;
-}
 
-.footer-bar-detached a {
-  text-decoration: none;
-  color: #8a8a8a;
-  font-size: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
+  a {
+    text-decoration: none;
+    color: #8a8a8a;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
 
-/* AQUI É O MAIS IMPORTANTE */
-.footer-bar-detached ion-icon {
-  font-size: 22px; /* tamanho igual ao da imagem */
-  color: #888;
+    ion-icon {
+      font-size: 22px;
+      color: #888;
+    }
+  }
 }
